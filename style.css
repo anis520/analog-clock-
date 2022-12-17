@@ -1,0 +1,111 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgba(128, 128, 128, 0.192);
+}
+
+
+.clock{
+
+    height: 500px;
+    width: 500px;
+    margin: 70px auto;
+    background-color:rgb(231 24 24);
+     
+     background-image: url('/img/Analogue_clock_face.svg.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+   position: relative;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+ .c{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+ }
+
+ 
+
+
+
+.clock .s{
+
+       
+      width: 0px;
+      height: 350px;
+       display: flex;
+       justify-content: center;
+        /* transform: rotate(); */
+}
+
+.clock .s::before{
+    content: "";
+    height: 192px;
+    width: 5px;
+    background-color: rgb(0, 0, 0);
+    position: absolute; 
+    border-radius: 10px 10px 0px 0px;
+
+
+}
+.clock .m{
+
+       
+      width: 0px;
+      height: 300px;
+       display: flex;
+       justify-content: center;
+ }
+.clock .m::before {
+    content: "";
+    height: 159px;
+    width: 8px;
+    background-color: red;
+    position: absolute;
+     border-radius: 10px 10px 0px 0px;
+
+}
+.clock .h{
+
+       
+      width: 0px;
+      height: 223px;
+       display: flex;
+       justify-content: center;
+ }
+
+.clock .h::before {
+    content: "";
+    height: 120px;
+    width: 10px;
+    background-color: rgb(0, 26, 255);
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+ }
+
+
+ .clock .ampm{
+
+
+position: absolute;
+top: 113px;
+background-color: black;
+color: white;
+padding: 7px 11px;
+font-size: 15px;
+border-radius: 5px;
+
+
+ }
