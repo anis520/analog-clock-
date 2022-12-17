@@ -26,10 +26,11 @@ AMPM.innerHTML =`${ampm}`
 console.log(`Time : ${geth} : ${getm} :${gets}`);
     
     sec.style.transform = `rotate(${gets*6}deg)`
-    min.style.transform = `rotate(${getm*6}deg)`
-    hour.style.transform = `rotate(${geth*30}deg)`
+    min.style.transform = `rotate(${(getm*6)+((gets*6))/60}deg)`
+    hour.style.transform = `rotate(${(geth*30)+((getm*6)/12)}deg)`
+  
     
-}, 1000);
+}, 1100);
 
 
 
